@@ -2,10 +2,10 @@ all:
 	$(CC) -o tinync tinync.c -g -lm
 
 cr:
-	$(CC) -o coroutine coroutine.c -g -lm
+	$(CC) -o test_coroutine test_coroutine.c -g -lm
 
 test:
-	./coroutine
+	./test_coroutine
 
 1000:
 	number=1 ; while [ $$number -le 1000 ] ; do\
